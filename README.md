@@ -63,10 +63,3 @@ sudo chown myuser:www-data files
 
 Now go to <http://localhost/mydrupal8/> and enter as administrator with user `admin` and password `123456`.
 
-
-%%### Módulos para drupal
-
-%%drush en admin_menu devel drupalforfirebug examples module_builder module_filter pathauto -y
-%%drush en jquery_update  views views_ui entityreference bootstrap logintoboggan date geolocation datepicker -y
-%%drush dis overlay toolbar -y
-%%drush vset theme_default bootstrap
