@@ -64,10 +64,29 @@ chmod 0775 files
 
 Open your web browser and go to <http://localhost/mydrupal8/>
 
-Choose language
+Choose language.
 
 ![Choose language](images/drupal01.png)
 
+Choose **Standar** profile.
+
+![Choose profile](images/drupal02.png)
+
+Verify requirements. Don't worry if you get the `Clean URLs` alert message. Click on **Continue anyway**.
+
+![Verify requirements](images/drupal03.png)
+
+Set up database. Type `mydrupal8` as **database name**. Enter your database administrator username and password.
+
+![Set up database](images/drupal04.png)
+
+Installation process may take a while.
+
+![Set up database](images/drupal05.png)
+
+Configure site. Enter the **site name**, **site email address**, **username** and **password** for the site maintenance account, etc.
+
+![Set up database](images/drupal06.png)
 
 <!--
 %%drush si standard --db-url=mysql://root:root@localhost/mydrupal8 --account-name="admin" --account-pass="123456" --account-mail="chiquito@condemor.com"
