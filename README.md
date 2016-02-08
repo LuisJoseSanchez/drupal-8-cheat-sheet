@@ -45,7 +45,7 @@ mysql -u root -p -e "CREATE DATABASE mydrupal8"
 sudo chmod a+w /var/www/html/
 cd /var/www/html/
 drush dl drupal
-mv drupal-8.0.2 mydrupal8
+mv drupal-8.0.3 mydrupal8
 ```
 
 ### Install Drupal 8
