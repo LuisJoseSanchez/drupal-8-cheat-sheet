@@ -48,18 +48,29 @@ drush dl drupal
 mv drupal-8.0.3 mydrupal8
 ```
 
-### Install Drupal 8
+### Create configuration files and set permissions
 
 ```console
-cd /var/www/html/mydrupal8/
-drush si standard --db-url=mysql://root:root@localhost/mydrupal8 --account-name="admin" --account-pass="123456" --account-mail="chiquito@condemor.com"
-cd sites/default/
-sudo cp ../example.settings.local.php ./settings.local.php
-sudo cp default.settings.php settings.php
-sudo cp default.services.yml services.yml
-sudo chmod 0666 settings.php services.yml
+cd mydrupal8/sites/default/
+cp default.settings.php settings.php
+cp default.services.yml services.yml
+chmod 0666 settings.php services.yml
+mkdir files
 sudo chown myuser:www-data files
+chmod 0775 files
 ```
 
-Now go to <http://localhost/mydrupal8/> and enter as administrator with user `admin` and password `123456`.
+### Install Drupal 8
 
+Open your web browser and go to <http://localhost/mydrupal8/>
+
+Choose language
+
+![Choose language](images/drupal01.png)
+
+
+<!--
+%%drush si standard --db-url=mysql://root:root@localhost/mydrupal8 --account-name="admin" --account-pass="123456" --account-mail="chiquito@condemor.com"
+
+%%Now go to <http://localhost/mydrupal8/> and enter as administrator with user `admin` and password `123456`.
+-->
