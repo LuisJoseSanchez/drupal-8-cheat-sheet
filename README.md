@@ -57,7 +57,7 @@ cp default.services.yml services.yml
 chmod 0666 settings.php services.yml
 mkdir files
 sudo chown myuser:www-data files
-chmod 0775 files
+chmod 0777 files
 ```
 
 ### Install Drupal 8
@@ -87,6 +87,12 @@ Installation process may take a while.
 Configure site. Enter the **site name**, **site email address**, **username** and **password** for the site maintenance account, etc. Click **Save and continue**.
 
 ![Configure site](images/drupal06.png)
+
+Rebuild cache:
+
+```console
+drush cr
+```
 
 ¡Congratulations! You have your Drupla 8 site installed.
 <!--
