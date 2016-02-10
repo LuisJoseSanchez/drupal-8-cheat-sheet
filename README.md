@@ -80,6 +80,8 @@ mv drupal-8.0.3 mydrupal8
 
 ### Create configuration files and set permissions
 
+Remember to type your real username instead of `myuser`.
+
 ```console
 cd mydrupal8/sites/default/
 cp default.settings.php settings.php
