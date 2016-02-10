@@ -39,6 +39,36 @@ Create database with name `mydrupal8`. Remember to enter the MySQL root password
 mysql -u root -p -e "CREATE DATABASE mydrupal8"
 ```
 
+### Configure Apache
+
+Edit the file `/etc/apache2/apache2.conf`:
+
+```console
+sudo gedit /etc/apache2/apache2.conf 
+```
+
+Find the section `<Directory /var/www/>` and set the option `AllowOverride` to `All` as follows:
+
+```console
+<Directory /var/www/>
+	Options Indexes FollowSymLinks
+	AllowOverride All
+	Require all granted
+</Directory>
+```
+
+Activate `mod_rewrite`:
+
+```console
+sudo a2enmod rewrite
+```
+
+Reload Apache:
+
+```console
+sudo service apache2 restart
+```
+
 ### Download Drupal 8
 
 ```console
