@@ -120,10 +120,11 @@ Configure site. Enter the **site name**, **site email address**, **username** an
 
 ![Configure site](images/drupal06.png)
 
-Rebuild cache:
+### Protect `settings.php` and `services.yml`
 
 ```console
-drush cr
+cd mydrupal8/sites/default/
+chmod a-w settings.php services.yml 
 ```
 
 ¡Congratulations! You have your Drupla 8 site installed.
