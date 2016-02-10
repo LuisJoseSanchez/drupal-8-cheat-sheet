@@ -104,9 +104,10 @@ Choose **Standar** profile.
 
 ![Choose profile](images/drupal02.png)
 
-%%Verify requirements. Don't worry if you get the `Clean URLs` alert message. Click on **Continue anyway**.
+<!--Verify requirements. Don't worry if you get the `Clean URLs` alert message. Click on **Continue anyway**.
 
 %%![Verify requirements](images/drupal03.png)
+-->
 
 Set up database. Type `mydrupal8` as **database name**. Enter your database administrator **username** and **password**.
 
