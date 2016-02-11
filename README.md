@@ -31,14 +31,6 @@ Check the installation:
 drush status
 ```
 
-### Create `MySQL` database
-
-Create database with name `mydrupal8`. Remember to enter the MySQL root password when you are prompted, not the system password.
-
-```console
-mysql -u root -p -e "CREATE DATABASE mydrupal8"
-```
-
 ### Configure Apache
 
 Edit the file `/etc/apache2/apache2.conf`:
@@ -67,6 +59,14 @@ Reload Apache:
 
 ```console
 sudo service apache2 restart
+```
+
+### Create `MySQL` database
+
+Create database with name `mydrupal8`. Remember to enter the MySQL root password when you are prompted, not the system password.
+
+```console
+mysql -u root -p -e "CREATE DATABASE mydrupal8"
 ```
 
 ### Download Drupal 8
