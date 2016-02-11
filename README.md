@@ -2,7 +2,7 @@
 
 ## Drupal 8 Installation
 
-This installation has been tested in **Ubuntu 15.10**
+This installation has been tested successfully in **Ubuntu 15.10**
 
 ### Install `drush`
 
