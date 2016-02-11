@@ -128,7 +128,7 @@ cd mydrupal8/sites/default/
 chmod a-w settings.php services.yml 
 ```
 
-¡Congratulations! You have your Drupla 8 site installed.
+¡Congratulations! You have your Drupal 8 site installed.
 <!--
 %%drush si standard --db-url=mysql://root:root@localhost/mydrupal8 --account-name="admin" --account-pass="123456" --account-mail="chiquito@condemor.com"
 
