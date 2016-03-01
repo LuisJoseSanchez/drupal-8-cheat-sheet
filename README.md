@@ -140,7 +140,7 @@ When you try to install a contrib module for the first time, you probably get th
 
 > Update manager WARNING: You are not using an encrypted connection, so your password will be sent in plain text.
 
-![Drupal update manager warning](images/drupal_update_manager_warning.png)
+![Drupal update manager warning](images/drupal_update_manager_warning2.png)
 
 To fix this just go to your site
 
