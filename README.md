@@ -134,6 +134,26 @@ chmod a-w settings.php services.yml
 
 ![Go to your site](images/drupal07.png)
 
+# Solution for Drupal update manager warning
+
+When you try to install a contrib module for the first time, you probably get the following message:
+
+> Update manager WARNING: You are not using an encrypted connection, so your password will be sent in plain text.
+
+![Drupal update manager warning](images/drupal_update_manager_warning.png)
+
+To fix this just go to your site
+
+```console
+cd /var/www/html/mydrupal8
+```
+
+and type the folowing
+
+```console
+sudo chown -R www-data *
+```
+
 <!--
 %%drush si standard --db-url=mysql://root:root@localhost/mydrupal8 --account-name="admin" --account-pass="123456" --account-mail="chiquito@condemor.com"
 
