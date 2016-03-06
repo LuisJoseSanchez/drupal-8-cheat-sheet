@@ -6,7 +6,7 @@ Table of contents
   * [Drupal 8 Installation](#drupal-8-installation)
     * [Install `drush`](#install-drush)
     * [Configure Apache](#configure-apache)
-    * [Create `MySQL` database](#create-my-sql-database)
+    * [Create `MySQL` database](#create-mysql-database)
     * [Download Drupal 8](#download-drupal-8)
     * [Create configuration files and set permissions](#create-configuration-files)
     * [Install Drupal 8](#install-drupal-8)
