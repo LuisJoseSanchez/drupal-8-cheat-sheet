@@ -10,8 +10,8 @@ Table of contents
     * [Download Drupal 8](#download-drupal-8)
     * [Create configuration files and set permissions](#create-configuration-files-and-set-permissions)
     * [Install Drupal 8](#install-drupal-8)
-    * [Protect `settings.php` and `services.yml`](#protect-settings)
-    * [Go to your site!](#go-to-your-site!)
+    * [Protect `settings.php` and `services.yml`](#protect-settingsphp-and-servicesyml)
+    * [Go to your site!](#go-to-your-site)
   * [Solution for Drupal update manager warning](#solution-for-drupal-update-manager-warning)
 
 ## Drupal 8 Installation
@@ -135,7 +135,7 @@ Configure site. Enter the **site name**, **site email address**, **username** an
 
 ![Configure site](images/drupal06.png)
 
-### Protect `settings.php` and `services.yml` {#protect-settings}
+### Protect `settings.php` and `services.yml`
 
 ```console
 cd mydrupal8/sites/default/
