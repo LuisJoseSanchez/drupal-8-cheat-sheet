@@ -10,7 +10,7 @@ Table of contents
     * [Download Drupal 8](#download-drupal-8)
     * [Create configuration files and set permissions](#create-configuration-files-and-set-permissions)
     * [Install Drupal 8](#install-drupal-8)
-    * [Protect `settings.php` and `services.yml`](#protect-settings.php-and-services.yml)
+    * [Protect `settings.php` and `services.yml`](#protect-settings-php-and-services-yml)
     * [Go to your site!](#go-to)
   * [Solution for Drupal update manager warning](#solution-for-drupal-update-manager-warning)
 
