@@ -8,11 +8,11 @@ Table of contents
     * [Configure Apache](#configure-apache)
     * [Create `MySQL` database](#create-mysql-database)
     * [Download Drupal 8](#download-drupal-8)
-    * [Create configuration files and set permissions](#create-configuration-files)
+    * [Create configuration files and set permissions](#create-configuration-files-and-set-permissions)
     * [Install Drupal 8](#install-drupal-8)
-    * [Protect `settings.php` and `services.yml`](#protect-settings)
+    * [Protect `settings.php` and `services.yml`](#protect-settings.php-and-services.yml)
     * [Go to your site!](#go-to)
-  * [Solution for Drupal update manager warning](#solution-for-drupal-update)
+  * [Solution for Drupal update manager warning](#solution-for-drupal-update-manager-warning)
 
 ## Drupal 8 Installation
 
