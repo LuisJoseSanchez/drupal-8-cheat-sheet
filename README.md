@@ -1,5 +1,19 @@
 # Drupal 8 Cheat Sheet
 
+Table of contents
+=================
+
+  * [Drupal 8 Installation](#drupal-8-installation)
+    * [Install `drush`](#install-drush)
+    * [Configure Apache](#configure-apache)
+    * [Create `MySQL` database](#create-my-sql-database)
+    * [Download Drupal 8](#download-drupal-8)
+    * [Create configuration files and set permissions](#create-configuration-files)
+    * [Install Drupal 8](#install-drupal-8)
+    * [Protect `settings.php` and `services.yml`](#protect-settings)
+    * [Go to your site!](#go-to)
+  * [Solution for Drupal update manager warning](#solution-for-drupal-update)
+
 ## Drupal 8 Installation
 
 This installation has been tested successfully in **Ubuntu 15.10**
@@ -134,7 +148,7 @@ chmod a-w settings.php services.yml
 
 ![Go to your site](images/drupal07.png)
 
-# Solution for Drupal update manager warning
+## Solution for Drupal update manager warning
 
 When you try to install a contrib module for the first time, you probably get the following message:
 
