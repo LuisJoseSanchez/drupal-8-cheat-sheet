@@ -13,6 +13,8 @@ Table of contents
     * [Protect `settings.php` and `services.yml`](#protect-settingsphp-and-servicesyml)
     * [Go to your site!](#go-to-your-site)
   * [Solution for Drupal update manager warning](#solution-for-drupal-update-manager-warning)
+  * [Drupal 8 Modules](#drupal-8-modules)
+    * [Hello World Module](#hello-world-module)
 
 ## Drupal 8 Installation
 
@@ -167,6 +169,91 @@ and type the folowing
 ```console
 sudo chown -R www-data *
 ```
+
+## Drupal 8 Modules
+
+### Hello World Module
+
+Go to your modules folder
+
+```console
+cd /var/www/html/mydrupal8/modules/
+```
+
+Create two folders (if they don't exist already) for the contributed modules and the custom modules
+
+```console
+mkdir contrib
+mkdir custom
+```
+
+Create the folder `hello_world` inside the custom folder
+
+```console
+cd custom/
+mkdir hello_world
+```
+
+Within `hello_world` folder, create a file named `hello_world.info.yml` with the following content
+
+```
+name: Hello World
+type: module
+description: 'A module that says hello.'
+package: Custom Modules
+version: 1.0
+core: 8.x
+```
+
+Create also a file named `hello_world.routing.yml` with the following content
+
+```
+hello_world_settings:
+  path: '/helloworld'
+  defaults:
+    _controller: '\Drupal\hello_world\Controller\HelloWorldController::sayHello'
+    _title: 'Hello World'
+  requirements:
+    _permission: 'access content'
+```
+
+Create a file named `HelloWorldController.php` inside `modules/hello_world/src/Controller` so the directory tree remains as follows
+
+```console
+$ tree modules/
+modules/
+├── custom
+│   └── hello_world
+│       ├── hello_world.info.yml
+│       ├── hello_world.routing.yml
+│       └── src
+│           └── Controller
+│               └── HelloWorldController.php
+└── README.txt
+```
+
+```
+<?php
+
+namespace Drupal\hello_world\Controller;
+
+  class HelloWorldController {
+    
+    public function sayHello() {
+      $output = [
+        '#markup' => '<p><b>Hello world!</b> This is my first Drupal 8 module.</p>',
+      ];
+      return $output;
+    }
+  }
+```
+
+Activate de module `Hello World` in your drupal site and go to <http://localhost/mydrupal8/helloworld>
+
+## Recommended Modules
+
+* [Admin toolbar](https://www.drupal.org/project/admin_toolbar)
+* [Examples for Developers](https://www.drupal.org/project/examples)
 
 <!--
 %%drush si standard --db-url=mysql://root:root@localhost/mydrupal8 --account-name="admin" --account-pass="123456" --account-mail="chiquito@condemor.com"
