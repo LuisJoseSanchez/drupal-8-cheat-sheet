@@ -16,6 +16,7 @@ Table of contents
   * [Drupal 8 Modules](#drupal-8-modules)
     * [Hello World Module](#hello-world-module)
   * [Recommended Modules](#recommended-modules)
+  * [Links for Developers](#links-for-developers)
 
 ## Drupal 8 Installation
 
@@ -255,6 +256,10 @@ Activate de module `Hello World` in your drupal site and go to <http://localhost
 
 * [Admin toolbar](https://www.drupal.org/project/admin_toolbar)
 * [Examples for Developers](https://www.drupal.org/project/examples)
+
+## Links for Developers
+
+* [Drupal 8 API](https://api.drupal.org/api/drupal/8)
 
 <!--
 %%drush si standard --db-url=mysql://root:root@localhost/mydrupal8 --account-name="admin" --account-pass="123456" --account-mail="chiquito@condemor.com"
