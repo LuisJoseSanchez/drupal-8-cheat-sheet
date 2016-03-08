@@ -15,6 +15,7 @@ Table of contents
   * [Solution for Drupal update manager warning](#solution-for-drupal-update-manager-warning)
   * [Drupal 8 Modules](#drupal-8-modules)
     * [Hello World Module](#hello-world-module)
+  * [Recommended Modules](#recommended-modules)
 
 ## Drupal 8 Installation
 
